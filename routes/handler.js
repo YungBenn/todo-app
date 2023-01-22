@@ -34,7 +34,7 @@ router.get('/todos', (req, res) => {
   });
 });
 
-// get todo with specific id
+// get todo by id
 router.get('/todos/:todo_id', (req, res) => {
   Todo.findById(req.params.todo_id, (err, todo) => {
     if (err) {
@@ -44,7 +44,7 @@ router.get('/todos/:todo_id', (req, res) => {
   });
 });
 
-// update todo with this id
+// update todo by id
 router.put('/todos/:todo_id', (req, res) => {
   Todo.findById(req.params.todo_id, (err, todo) => {
     if (err) {
@@ -61,7 +61,7 @@ router.put('/todos/:todo_id', (req, res) => {
   });
 });
 
-// delete todo with this id
+// delete todo by id
 router.delete('/todos/:todo_id', (req, res) => {
   Todo.remove(
     {
