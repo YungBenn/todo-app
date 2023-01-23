@@ -530,39 +530,14 @@ video {
   margin: auto;
 }
 
-.my-6 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.my-10 {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-}
-
-.my-7 {
-  margin-top: 1.75rem;
-  margin-bottom: 1.75rem;
+.my-12 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .my-5 {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
-}
-
-.my-1 {
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
-}
-
-.my-16 {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-}
-
-.my-12 {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
 }
 
 .ml-10 {
@@ -713,48 +688,16 @@ input {
   fill: #1e293b;
 }
 
-.hover\:fill-slate-900:hover {
-  fill: #0f172a;
-}
-
-.hover\:fill-emerald-900:hover {
-  fill: #064e3b;
-}
-
-.hover\:fill-emerald-800:hover {
-  fill: #065f46;
-}
-
-.hover\:fill-emerald-600:hover {
-  fill: #059669;
-}
-
-.hover\:fill-emerald-700:hover {
-  fill: #047857;
-}
-
-.hover\:fill-amber-500:hover {
-  fill: #f59e0b;
+.hover\:fill-blue-700:hover {
+  fill: #1d4ed8;
 }
 
 .hover\:fill-amber-700:hover {
   fill: #b45309;
 }
 
-.hover\:fill-amber-900:hover {
-  fill: #78350f;
-}
-
-.hover\:fill-blue-500:hover {
-  fill: #3b82f6;
-}
-
-.hover\:fill-blue-700:hover {
-  fill: #1d4ed8;
-}
-
-.hover\:stroke-slate-800:hover {
-  stroke: #1e293b;
+.hover\:fill-emerald-700:hover {
+  fill: #047857;
 }
 
 .hover\:stroke-slate-500:hover {
