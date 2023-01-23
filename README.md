@@ -1,2 +1,2 @@
 # todo-app
-Todo list API - Create with MongoDB, Express, Node
+Todo list web app - Create with MongoDB, Express, Node
