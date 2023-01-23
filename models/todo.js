@@ -3,7 +3,10 @@ import mongoose from 'mongoose';
 const Schema = mongoose.Schema;
 const TodoSchema = new Schema(
   {
-    title: String,
+    title: {
+      type: String,
+      required: true,
+    },
   },
   {
     timestamps: true,

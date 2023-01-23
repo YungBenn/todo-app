@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+@layer components {
+  .card {
+    @apply bg-slate-800 text-center;
+    border-radius: theme('borderRadius.lg');
+    padding: theme('spacing.6');
+    margin-inline: 600px;
+  }
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+input {
+  width: 1800px;
+}

@@ -2,6 +2,7 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
 import mongoose from 'mongoose';
+import methodOverride from 'method-override';
 import handler from './routes/handler.js';
 
 // connect to database
@@ -12,8 +13,11 @@ mongoose.connect('mongodb://127.0.0.1/todoDB', {
 });
 
 const app = express();
-app.use(bodyParser.urlencoded({ extended: true }));
+app.set('view engine', 'ejs');
+app.use('/public', express.static('public'));
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+app.use(methodOverride('_method'));
 
 // middleware
 app.use(cors());
@@ -28,7 +32,7 @@ app.use('/', handler);
 
 // 404 page
 app.use((req, res) => {
-  res.status(404).json({ message: 'Error' });
+  res.status(404).render('404');
 });
 
 // listen for request
