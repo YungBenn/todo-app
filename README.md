@@ -5,9 +5,9 @@ A simple Todo web app
 
 ## Features
 
-- Add todo
-- Edit Todo
-- Delete Todo
+- Add 
+- Edit 
+- Done
 
 
 ## Tech Stack
