@@ -12,7 +12,7 @@ A simple Todo web app
 
 ## Tech Stack
 
-**Front-end:** EJS, Tailwind CSS
+**View engine:** EJS, Tailwind CSS
 
 **Server:** Node, Express
 
