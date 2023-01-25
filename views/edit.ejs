@@ -28,7 +28,9 @@
         id="title"
         class="bg-inherit focus:outline-none text-slate-100 text-center text-6xl"
         value="<%= todo.title %>"
-        placeholder="Create a new todo..." /><br />
+        placeholder="Create a new todo..."
+        autofocus
+        onfocus="var temp_value=this.value; this.value=''; this.value=temp_value" /><br />
       <center>
         <button type="submit" class="text-slate-100 mt-10">
           <svg
