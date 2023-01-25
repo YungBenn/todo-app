@@ -6,18 +6,18 @@ const router = express.Router();
 // get home page
 router.get('/', async (req, res) => {
   const todos = await Todo.find();
-  res.render('index', { todos: todos });
+  res.render('index', { todos: todos, title: 'Home' });
 });
 
 // get create page
 router.get('/new', (req, res) => {
-  res.render('new', { todo: new Todo() });
+  res.render('new', { todo: new Todo(), title: 'Add' });
 });
 
 // get edit page
 router.get('/edit/:id', async (req, res) => {
   const todo = await Todo.findById(req.params.id);
-  res.render('edit', { todo: todo });
+  res.render('edit', { todo: todo, title: 'Edit' });
 });
 
 // create todo
