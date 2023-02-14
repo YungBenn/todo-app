@@ -4,7 +4,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon app.js",
+    "build": "nodemon app.js",
     "build-css": "npx tailwindcss -i ./public/style.css -o ./public/output.css --watch"
   },
   "keywords": [],
