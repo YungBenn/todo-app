@@ -1,3 +1,5 @@
+import * as dotenv from 'dotenv';
+dotenv.config();
 import express from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
@@ -7,7 +9,7 @@ import handler from './routes/handler.js';
 
 // connect to database
 mongoose.set('strictQuery', false);
-mongoose.connect('mongodb://127.0.0.1/todoDB', {
+mongoose.connect(process.env.MONGO_URI || 'mongodb://127.0.0.1/todoDB', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
