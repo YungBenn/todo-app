@@ -6,7 +6,6 @@ import cors from 'cors';
 import mongoose from 'mongoose';
 import methodOverride from 'method-override';
 import handler from './routes/handler.js';
-import serverless from 'serverless-http';
 
 // connect to database
 mongoose.set('strictQuery', false);
@@ -43,5 +42,3 @@ const port = 3000;
 app.listen(port, () => {
   console.log(`server is running on http://localhost:${port}`);
 });
-
-module.exports.handler = serverless(app);

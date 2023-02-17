@@ -4,9 +4,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon app.js",
-    "dev": "node app.js",
-    "build": "netlify deploy --prod",
+    "dev": "nodemon app.js",
+    "start": "node app.js",
     "build-css": "npx tailwindcss -i ./public/style.css -o ./public/output.css --watch"
   },
   "keywords": [],
@@ -20,10 +19,7 @@
     "express": "^4.18.2",
     "method-override": "^3.0.0",
     "mongoose": "^6.8.3",
-    "netlify-cli": "^12.12.0",
-    "netlify-lambda": "^2.0.15",
-    "nodemon": "^2.0.20",
-    "serverless-http": "^3.1.1"
+    "nodemon": "^2.0.20"
   },
   "description": "",
   "devDependencies": {
